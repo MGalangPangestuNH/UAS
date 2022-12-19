@@ -20,168 +20,113 @@ Jika bilangan tersebut habis dibagi 3, 5, atau 7, maka cetak bilangan tersebut d
 1).Mencari Matrix Transpose
 
 
-#include<iostream>
-#include<iomanip>
-using namespace std;
 
-int main(){
-    
-	int arr[100][100], jumlahBaris, jumlahKolom, i, j, baris, kolom;
-	
-	cout<< "=======================================\n";
-	cout<< "Program Mencetak Matrix Transpos\n";
-	cout<< "=======================================\n";
-	cout<< "Nama  : M Galang Pangestu NH\n";
-	cout<< "Nim   : 1227050066\n";
-	cout<< "Kelas : Informatika - B\n\n";
+	#include<iostream>
+	#include<iomanip>
+	using namespace std;
 
-    cout<<"Input jumlah baris: "; cin>>jumlahBaris;
-    cout<<"Input jumlah kolom: "; cin>>jumlahKolom;
-    cout << endl;
+	int main(){
 
-    for(i = 0; i < jumlahBaris; i++){
-        for(j = 0; j < jumlahKolom; j++){
-            cout << "Baris " <<i+1<<", kolom "<<j+1<< " = ";
-            cin >> arr[i][j];
-        }
-        cout << endl;
-    }
-    cout << "Hasil matriks: " << endl;
+		int arr[100][100], jumlahBaris, jumlahKolom, i, j, baris, kolom;
 
-    for(i = 0; i < jumlahBaris ; i++){
-    for(j = 0; j < jumlahKolom; j++){
-        cout << setw(3) << arr[i][j] << " ";
-    }
-    cout << endl;
-    }
+		cout<< "=======================================\n";
+		cout<< "Program Mencetak Matrix Transpos\n";
+		cout<< "=======================================\n";
+		cout<< "Nama  : M Galang Pangestu NH\n";
+		cout<< "Nim   : 1227050066\n";
+		cout<< "Kelas : Informatika - B\n\n";
 
-    baris = jumlahBaris;
-    kolom = jumlahKolom;
+	    cout<<"Input jumlah baris: "; cin>>jumlahBaris;
+	    cout<<"Input jumlah kolom: "; cin>>jumlahKolom;
+	    cout << endl;
 
-    jumlahKolom = baris;
-    jumlahBaris = kolom;
+	    for(i = 0; i < jumlahBaris; i++){
+		for(j = 0; j < jumlahKolom; j++){
+		    cout << "Baris " <<i+1<<", kolom "<<j+1<< " = ";
+		    cin >> arr[i][j];
+		}
+		cout << endl;
+	    }
+	    cout << "Hasil matriks: " << endl;
 
-    cout << "\nUbah kolom jadi baris dan baris jadi kolom: " << endl;
+	    for(i = 0; i < jumlahBaris ; i++){
+	    for(j = 0; j < jumlahKolom; j++){
+		cout << setw(3) << arr[i][j] << " ";
+	    }
+	    cout << endl;
+	    }
 
-    for(i = 0; i < jumlahBaris ; i++){
-    	for(j = 0; j < jumlahKolom; j++){
-        cout << setw(3) << arr[j][i] << " ";
-    }
-    cout << endl;
-    }
-	return 0;
-}
+	    baris = jumlahBaris;
+	    kolom = jumlahKolom;
+
+	    jumlahKolom = baris;
+	    jumlahBaris = kolom;
+
+	    cout << "\nUbah kolom jadi baris dan baris jadi kolom: " << endl;
+
+	    for(i = 0; i < jumlahBaris ; i++){
+		for(j = 0; j < jumlahKolom; j++){
+		cout << setw(3) << arr[j][i] << " ";
+	    }
+	    cout << endl;
+	    }
+		return 0;
+	}
 2).Membuat program bilangan yang habis dibagi 3,5,7
 
 	
-#include <iostream>
-#include <iomanip>
-using namespace std;
-int main(){
-    
-	int arr[100][100], jumlahBaris, jumlahKolom, i, j, baris, kolom;
-	
-	cout<< "==============================================\n";
-	cout<< "Program Bilangan Yang Habis Dibagi 3, 5, dan 7\n";
-	cout<< "==============================================\n";
-	cout<< "Nama  : M Galang Pangestu NH\n";
-	cout<< "Nim   : 1227050066\n";
-	cout<< "Kelas : Informatika - B\n\n";
 
-    cout<<"Input jumlah baris: "; cin>>jumlahBaris;
-    cout<<"Input jumlah kolom: "; cin>>jumlahKolom;
-    cout << endl;
+	#include <iostream>
+	#include <iomanip>
+	using namespace std;
+	int main(){
 
-    for(i = 0; i < jumlahBaris; i++){
-        for(j = 0; j < jumlahKolom; j++){
-            cout << "Baris " <<i+1<<", kolom "<<j+1<< " = ";
-            cin >> arr[i][j];
-        }
-        cout << endl;
-    }
+		int arr[100][100], jumlahBaris, jumlahKolom, i, j, baris, kolom;
 
-    cout << "Hasil input nilai : " << endl;
+		cout<< "==============================================\n";
+		cout<< "Program Bilangan Yang Habis Dibagi 3, 5, dan 7\n";
+		cout<< "==============================================\n";
+		cout<< "Nama  : M Galang Pangestu NH\n";
+		cout<< "Nim   : 1227050066\n";
+		cout<< "Kelas : Informatika - B\n\n";
 
-    for(i = 0; i < jumlahBaris ; i++){
-    for(j = 0; j < jumlahKolom; j++){
-        cout << setw(3) << arr[i][j] << " ";
-    }
-    cout << endl;
-    }
+	    cout<<"Input jumlah baris: "; cin>>jumlahBaris;
+	    cout<<"Input jumlah kolom: "; cin>>jumlahKolom;
+	    cout << endl;
 
-    cout << "\nHasil bilangan yang habis dibagi 3,5,7 : " << endl;
+	    for(i = 0; i < jumlahBaris; i++){
+		for(j = 0; j < jumlahKolom; j++){
+		    cout << "Baris " <<i+1<<", kolom "<<j+1<< " = ";
+		    cin >> arr[i][j];
+		}
+		cout << endl;
+	    }
 
-    for(i = 0; i < jumlahBaris ; i++){
-    for(j = 0; j < jumlahKolom; j++){
-        if(arr[i][j] % 3 == 0 || arr[i][j] % 5 == 0 || arr[i][j] % 7 == 0){
-        cout << setw(3) << arr[i][j] << " ";
-        }
-    }
-    cout << endl;
-    }
+	    cout << "Hasil input nilai : " << endl;
 
-    
-    cout << endl;
-    return 0;
-}
+	    for(i = 0; i < jumlahBaris ; i++){
+	    for(j = 0; j < jumlahKolom; j++){
+		cout << setw(3) << arr[i][j] << " ";
+	    }
+	    cout << endl;
+	    }
+
+	    cout << "\nHasil bilangan yang habis dibagi 3,5,7 : " << endl;
+
+	    for(i = 0; i < jumlahBaris ; i++){
+	    for(j = 0; j < jumlahKolom; j++){
+		if(arr[i][j] % 3 == 0 || arr[i][j] % 5 == 0 || arr[i][j] % 7 == 0){
+		cout << setw(3) << arr[i][j] << " ";
+		}
+	    }
+	    cout << endl;
+	    }
+
+
+	    cout << endl;
+	    return 0;
+	}
 ## Output
-1).Program Mencetak Matrix Transpos
-=======================================
-Nama  : M Galang Pangestu NH
-Nim   : 1227050066
-Kelas : Informatika - B
+![Screenshot_20221219_190826](https://user-images.githubusercontent.com/121006608/208424471-702d0d62-26e0-40b3-b240-98fde1cfb1f5.png)
+![Screenshot_20221219_191042](https://user-images.githubusercontent.com/121006608/208424543-cb53e406-00da-43d4-889f-bc8a75c6f522.png)
 
-Input jumlah baris: 2
-Input jumlah kolom: 3
-
-Baris 1, kolom 1 = 1
-Baris 1, kolom 2 = 2
-Baris 1, kolom 3 = 3
-
-Baris 2, kolom 1 = 1
-Baris 2, kolom 2 = 2
-Baris 2, kolom 3 = 3
-
-Hasil matriks:
-  1   2   3
-  1   2   3
-
-Ubah kolom jadi baris dan baris jadi kolom:
-  1   1
-  2   2
-  3   3
-
-
-2).==============================================
-Program Bilangan Yang Habis Dibagi 3, 5, dan 7
-==============================================
-Nama  : M Galang Pangestu NH
-Nim   : 1227050066
-Kelas : Informatika - B
-
-Input jumlah baris: 2
-Input jumlah kolom:
-7
-
-Baris 1, kolom 1 = 12
-Baris 1, kolom 2 = 12
-Baris 1, kolom 3 = 12
-Baris 1, kolom 4 = 12
-Baris 1, kolom 5 = 12
-Baris 1, kolom 6 = 12
-Baris 1, kolom 7 = 12
-
-Baris 2, kolom 1 = 1
-Baris 2, kolom 2 = 2
-Baris 2, kolom 3 = 2
-Baris 2, kolom 4 = 2
-Baris 2, kolom 5 = 2
-Baris 2, kolom 6 = 2
-Baris 2, kolom 7 = 2
-
-Hasil input nilai :
- 12  12  12  12  12  12  12
-  1   2   2   2   2   2   2
-
-Hasil bilangan yang habis dibagi 3,5,7 :
- 12  12  12  12  12  12  12
