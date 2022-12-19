@@ -150,6 +150,8 @@ Ubah kolom jadi baris dan baris jadi kolom:
   1   1
   2   2
   3   3
+
+
 2).==============================================
 Program Bilangan Yang Habis Dibagi 3, 5, dan 7
 ==============================================
